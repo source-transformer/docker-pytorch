@@ -3,8 +3,16 @@
 {
 	"name": "docker-pytorch",
 	// Or use a Dockerfile or Docker Compose file. More info: https://containers.dev/guide/dockerfile
-	"image": "mcr.microsoft.com/devcontainers/base:bullseye"
-
+	//"image": "mcr.microsoft.com/devcontainers/base:bullseye"
+	"build": {
+		"dockerfile": "Dockerfile",
+		// Update 'VARIANT' to pick an Debian version: bullseye, buster
+		// Use bullseye on local arm64/Apple Silicon.
+		"args": {
+		  "VARIANT": "bullseye"
+		}
+	  }
+	
 	// Features to add to the dev container. More info: https://containers.dev/features.
 	// "features": {},
 
