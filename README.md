@@ -1,6 +1,16 @@
 # docker-pytorch
 
-## Setting Up Docker Container
+## Instructions
+
+Unfortunately Linux Dev Containers running on Mac's that have access to PyTorch's MPS functionality will be locked out.
+
+To test this - run the following:
+
+```
+python3 test_pytorch.py
+```
+
+## Alternative to Set Up Environment on Linux Container
 
 setupPython.sh needs to be set as executable otherwise you'll get error:
 
